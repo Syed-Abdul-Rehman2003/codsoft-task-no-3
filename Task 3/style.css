@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    user-select: none; /*prevent the  users from selecting its content */
+}
+
+body {
+    /* set width and height total 100% */
+    width: 100%;
+    height: 100vh;
+    /*calc at exact center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+}
+
+.main {
+    border: 1px solid #999;
+    padding: 20px;
+    border-radius: 10px;
+    background: #252525;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    padding: 24px;
+    width: 320px;
+    border: none;
+    color: #fff;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+input::placeholder {
+    /* text in input  */
+    color: #aaa;
+}
+/* set properties for our calculator buttons */
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: none;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s, transform 0.2s;
+    background: #444;
+    color: #fff;
+}
+/* wehnever the button will be hovered their needs to be transformation */
+button:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+.op {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.op1 {
+    background-color: #ff8c00;
+    width: 144px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.menu-btn {
+    background-color: #393939;
+    color: #fff;
+}
+
+
+
